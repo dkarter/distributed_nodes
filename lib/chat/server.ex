@@ -26,7 +26,6 @@ defmodule Chat.Server do
 
   def get_pid do
     :global.whereis_name(@name)
-    # GenServer.whereis(__MODULE__)
   end
 
   def register_client(client_pid) do
